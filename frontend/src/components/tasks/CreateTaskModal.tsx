@@ -7,7 +7,7 @@ import type { CreateTaskPayload } from '@/types/task'
 interface CreateTaskModalProps {
   isOpen: boolean
   onClose: () => void
-  onSubmit: (payload: CreateTaskPayload) => Promise<void>
+  onSubmit: (payload: CreateTaskPayload) => Promise<void | unknown>
 }
 
 export function CreateTaskModal({ isOpen, onClose, onSubmit }: CreateTaskModalProps) {
