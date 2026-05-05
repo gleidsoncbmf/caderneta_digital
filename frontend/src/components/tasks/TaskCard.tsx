@@ -20,7 +20,7 @@ interface TaskCardProps {
 
 type SwipeAction = 'finalize' | 'pin' | 'delegate' | 'delete' | 'edit' | null
 
-const SWIPE_THRESHOLD = 60
+const SWIPE_THRESHOLD = 40
 
 export function TaskCard({ task, index, total, onEdit, onDelete, onFinalize, onPin, onDelegate }: TaskCardProps) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({ id: task.id })
@@ -74,7 +74,7 @@ export function TaskCard({ task, index, total, onEdit, onDelete, onFinalize, onP
     // Horizontal → handle swipe
     e.preventDefault()
     e.stopPropagation()
-    const clamped = Math.max(-150, Math.min(160, dx))
+    const clamped = Math.max(-220, Math.min(160, dx))
     setSwipeX(clamped)
     setRevealedSide(clamped < 0 ? 'left' : 'right')
   }
@@ -91,7 +91,7 @@ export function TaskCard({ task, index, total, onEdit, onDelete, onFinalize, onP
 
     // Snap open to reveal actions
     if (swipeX < -SWIPE_THRESHOLD) {
-      setSwipeX(-150) // matches SNAP_RIGHT
+      setSwipeX(-220) // matches SNAP_RIGHT
     } else {
       setSwipeX(160) // matches SNAP_LEFT
     }
@@ -141,7 +141,7 @@ export function TaskCard({ task, index, total, onEdit, onDelete, onFinalize, onP
   // How wide the action overlay is (based on swipe distance)
   const revealWidth = Math.abs(swipeX)
   const SNAP_LEFT = 160  // width when swiped right (left buttons)
-  const SNAP_RIGHT = 150 // width when swiped left (right buttons)
+  const SNAP_RIGHT = 220 // width when swiped left (right buttons)
 
   return (
     <>

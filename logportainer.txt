@@ -1,32 +1,100 @@
-root@yack-portainer-2025:/home/yack# docker logs cardeneta_mysql --tail 30
-2026-05-05 21:35:24+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
-2026-05-05 21:35:24+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-2026-05-05 21:35:24+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
-2026-05-05 21:35:24+00:00 [Note] [Entrypoint]: Initializing database files
-2026-05-05T21:35:24.819338Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-2026-05-05T21:35:24.819477Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.46) initializing of server in progress as process 80
-2026-05-05T21:35:24.820559Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
-2026-05-05T21:35:24.820564Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
-2026-05-05T21:35:24.820594Z 0 [ERROR] [MY-010119] [Server] Aborting
-2026-05-05T21:35:24.820672Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.46)  MySQL Community Server - GPL.
-2026-05-05 21:36:25+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
-2026-05-05 21:36:25+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-2026-05-05 21:36:25+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
-2026-05-05 21:36:25+00:00 [Note] [Entrypoint]: Initializing database files
-2026-05-05T21:36:25.376762Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-2026-05-05T21:36:25.376871Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.46) initializing of server in progress as process 79
-2026-05-05T21:36:25.378241Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
-2026-05-05T21:36:25.378257Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
-2026-05-05T21:36:25.378293Z 0 [ERROR] [MY-010119] [Server] Aborting
-2026-05-05T21:36:25.378386Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.46)  MySQL Community Server - GPL.
-2026-05-05 21:37:25+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
-2026-05-05 21:37:25+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-2026-05-05 21:37:25+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
-2026-05-05 21:37:25+00:00 [Note] [Entrypoint]: Initializing database files
-2026-05-05T21:37:25.901551Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
-2026-05-05T21:37:25.901640Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.46) initializing of server in progress as process 80
-2026-05-05T21:37:25.902775Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
-2026-05-05T21:37:25.902780Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
-2026-05-05T21:37:25.902809Z 0 [ERROR] [MY-010119] [Server] Aborting
-2026-05-05T21:37:25.903003Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.46)  MySQL Community Server - GPL.
-root@yack-portainer-2025:/home/yack# 
+2026-05-05T21:57:29.839255Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.46)  MySQL Community Server - GPL.
+2026-05-05 21:57:30+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:30+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2026-05-05 21:57:30+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:30+00:00 [Note] [Entrypoint]: Initializing database files
+2026-05-05T21:57:30.398057Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+2026-05-05T21:57:30.398122Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2026-05-05T21:57:30.398134Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.46) initializing of server in progress as process 80
+2026-05-05T21:57:30.399300Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2026-05-05T21:57:30.399306Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2026-05-05T21:57:30.399345Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-05-05T21:57:30.399437Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.46)  MySQL Community Server - GPL.
+2026-05-05 21:57:30+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:30+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2026-05-05 21:57:30+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:31+00:00 [Note] [Entrypoint]: Initializing database files
+2026-05-05T21:57:31.028211Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+2026-05-05T21:57:31.028301Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2026-05-05T21:57:31.028315Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.46) initializing of server in progress as process 80
+2026-05-05T21:57:31.029641Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2026-05-05T21:57:31.029649Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2026-05-05T21:57:31.029686Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-05-05T21:57:31.029779Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.46)  MySQL Community Server - GPL.
+2026-05-05 21:57:31+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:31+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2026-05-05 21:57:31+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:31+00:00 [Note] [Entrypoint]: Initializing database files
+2026-05-05T21:57:31.860841Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+2026-05-05T21:57:31.860968Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2026-05-05T21:57:31.860981Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.46) initializing of server in progress as process 80
+2026-05-05T21:57:31.862340Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2026-05-05T21:57:31.862346Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2026-05-05T21:57:31.862379Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-05-05T21:57:31.862491Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.46)  MySQL Community Server - GPL.
+2026-05-05 21:57:32+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:32+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2026-05-05 21:57:32+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:33+00:00 [Note] [Entrypoint]: Initializing database files
+2026-05-05T21:57:33.089797Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+2026-05-05T21:57:33.089892Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2026-05-05T21:57:33.089909Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.46) initializing of server in progress as process 80
+2026-05-05T21:57:33.090980Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2026-05-05T21:57:33.090985Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2026-05-05T21:57:33.091018Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-05-05T21:57:33.091119Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.46)  MySQL Community Server - GPL.
+2026-05-05 21:57:34+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:34+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2026-05-05 21:57:35+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:35+00:00 [Note] [Entrypoint]: Initializing database files
+2026-05-05T21:57:35.132406Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+2026-05-05T21:57:35.132485Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2026-05-05T21:57:35.132502Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.46) initializing of server in progress as process 80
+2026-05-05T21:57:35.133811Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2026-05-05T21:57:35.133819Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2026-05-05T21:57:35.133860Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-05-05T21:57:35.134049Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.46)  MySQL Community Server - GPL.
+2026-05-05 21:57:38+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:38+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2026-05-05 21:57:38+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:38+00:00 [Note] [Entrypoint]: Initializing database files
+2026-05-05T21:57:38.772077Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+2026-05-05T21:57:38.772140Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2026-05-05T21:57:38.772153Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.46) initializing of server in progress as process 80
+2026-05-05T21:57:38.773187Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2026-05-05T21:57:38.773194Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2026-05-05T21:57:38.773226Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-05-05T21:57:38.773324Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.46)  MySQL Community Server - GPL.
+2026-05-05 21:57:45+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:45+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2026-05-05 21:57:45+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:45+00:00 [Note] [Entrypoint]: Initializing database files
+2026-05-05T21:57:45.590744Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+2026-05-05T21:57:45.590840Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2026-05-05T21:57:45.590861Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.46) initializing of server in progress as process 80
+2026-05-05T21:57:45.592193Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2026-05-05T21:57:45.592201Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2026-05-05T21:57:45.592284Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-05-05T21:57:45.592461Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.46)  MySQL Community Server - GPL.
+2026-05-05 21:57:58+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:58+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2026-05-05 21:57:58+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:57:58+00:00 [Note] [Entrypoint]: Initializing database files
+2026-05-05T21:57:58.811803Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+2026-05-05T21:57:58.811895Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2026-05-05T21:57:58.811911Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.46) initializing of server in progress as process 80
+2026-05-05T21:57:58.813045Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2026-05-05T21:57:58.813050Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2026-05-05T21:57:58.813080Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-05-05T21:57:58.813175Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.46)  MySQL Community Server - GPL.
+2026-05-05 21:58:24+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:58:24+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2026-05-05 21:58:24+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.46-1.el9 started.
+2026-05-05 21:58:24+00:00 [Note] [Entrypoint]: Initializing database files
+2026-05-05T21:58:24.863655Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+2026-05-05T21:58:24.863720Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead.
+2026-05-05T21:58:24.863732Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.46) initializing of server in progress as process 80
+2026-05-05T21:58:24.864759Z 0 [ERROR] [MY-010457] [Server] --initialize specified but the data directory has files in it. Aborting.
+2026-05-05T21:58:24.864765Z 0 [ERROR] [MY-013236] [Server] The designated data directory /var/lib/mysql/ is unusable. You can remove all files that the server added to it.
+2026-05-05T21:58:24.864813Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-05-05T21:58:24.864920Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.46)  MySQL Community Server - GPL.
