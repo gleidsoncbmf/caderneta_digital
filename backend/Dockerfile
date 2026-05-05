@@ -30,6 +30,7 @@ COPY app/       app/
 COPY database/  database/
 COPY routes/    routes/
 COPY bootstrap/ bootstrap/
+COPY config/    config/
 COPY .env.example .env.example
 
 # 5) Set .env (runtime values injected by entrypoint)

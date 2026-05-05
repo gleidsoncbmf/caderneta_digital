@@ -17,7 +17,13 @@ return Application::configure(basePath: dirname(__DIR__))
         health:   '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
+        // Trust all proxies (Nginx → PHP-FPM behind reverse proxy)
+        $middleware->trustProxies(at: '*');
+
         // API uses Bearer token only — no stateful session/CSRF needed
+        $middleware->api(prepend: [
+            \Illuminate\Http\Middleware\HandleCors::class,
+        ]);
         $middleware->api(remove: [
             \Illuminate\Routing\Middleware\ThrottleRequests::class,
         ]);
